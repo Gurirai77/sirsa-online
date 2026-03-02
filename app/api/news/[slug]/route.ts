@@ -2,8 +2,8 @@ import Parser from "rss-parser";
 
 function cleanTitle(title: string) {
   return title
-    .split(" - ")[0]     // remove source name
-    .split(" | ")[0]     // remove source after |
+    .split(" - ")[0]
+    .split(" | ")[0]
     .trim();
 }
 
@@ -15,7 +15,6 @@ function generateSlug(title: string) {
     .replace(/[^\w\s]/gi, "")
     .replace(/\s+/g, "-");
 }
-
 
 function getImageByTitle(title: string) {
   const lower = title.toLowerCase();
@@ -40,8 +39,10 @@ function getImageByTitle(title: string) {
 
 export async function GET(
   req: Request,
-  { params }: { params: { slug: string } }
+  context: { params: Promise<{ slug: string }> }
 ) {
+  const { slug } = await context.params;
+
   const parser = new Parser();
   const feed = await parser.parseURL(
     "https://news.google.com/rss/search?q=Sirsa"
@@ -49,8 +50,8 @@ export async function GET(
 
   const items = feed.items;
 
-  const article = items.find(
-    (item) => generateSlug(item.title || "") === params.slug
+  const article = items.find(item =>
+    generateSlug(item.title || "").includes(slug)
   );
 
   if (!article) {

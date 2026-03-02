@@ -1,7 +1,6 @@
 export const dynamic = "force-dynamic";
 
 import Image from "next/image";
-import Link from "next/link";
 
 export default async function NewsPage() {
   const baseUrl =
@@ -27,7 +26,6 @@ export default async function NewsPage() {
                 alt={item.title}
                 fill
                 className="news-image"
-                sizes="(max-width: 768px) 100vw, 300px"
               />
             </div>
 
@@ -42,12 +40,14 @@ export default async function NewsPage() {
                 {item.description}
               </p>
 
-              <Link
-                href={`/news/${item.slug}`}
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="news-link"
               >
-                Read More →
-              </Link>
+                Read Full News →
+              </a>
             </div>
 
           </div>

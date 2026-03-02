@@ -2,33 +2,46 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import {
+  Home,
+  Newspaper,
+  Map,
+  Utensils,
+  GraduationCap,
+} from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
 
+  const navItems = [
+    { name: "Home", href: "/", icon: Home },
+    { name: "News", href: "/news", icon: Newspaper },
+    { name: "Tourism", href: "/tourism", icon: Map },
+    { name: "Restaurant", href: "/restaurants", icon: Utensils },
+    { name: "Schools", href: "/schools", icon: GraduationCap },
+  ];
+
   return (
-    <nav className="navbar">
-      <Link href="/news" className={pathname === "/news" ? "active" : ""}>
-        News
-      </Link>
+    <nav className="main-navbar">
+      <div className="nav-logo">SIRSA.ONLINE</div>
 
-      <Link href="/tourism" className={pathname === "/tourism" ? "active" : ""}>
-        Tourism
-      </Link>
+      <div className="nav-links">
+        {navItems.map((item) => {
+          const Icon = item.icon;
+          const isActive = pathname === item.href;
 
-      <Link
-        href="/restaurants"
-        className={pathname === "/restaurants" ? "active" : ""}
-      >
-        Restaurants
-      </Link>
-
-      <Link
-        href="/schools"
-        className={pathname === "/schools" ? "active" : ""}
-      >
-        Schools
-      </Link>
+          return (
+            <Link
+              key={item.name}
+              href={item.href}
+              className={`nav-item ${isActive ? "active" : ""}`}
+            >
+              <Icon size={18} />
+              <span>{item.name}</span>
+            </Link>
+          );
+        })}
+      </div>
     </nav>
   );
 }

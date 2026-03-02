@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import type { Metadata } from "next";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Sirsa Portal",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <main className="main-container">{children}</main>
+        <Footer />
       </body>
     </html>
   );
