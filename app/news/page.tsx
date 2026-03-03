@@ -3,10 +3,8 @@ export const dynamic = "force-dynamic";
 import Image from "next/image";
 
 export default async function NewsPage() {
-  const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-
-  const res = await fetch(`${baseUrl}/api/news`, {
+  // ✅ Direct API call - relative URL use karo
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/news`, {
     cache: "no-store",
   });
 
