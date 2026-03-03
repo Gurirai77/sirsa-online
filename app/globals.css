@@ -177,7 +177,7 @@ body {
 }
 
 .hero-section {
-  position: relative;
+   position: relative;
   height: 100vh;
   min-height: 600px;
   width: 100%;
@@ -198,7 +198,14 @@ body {
 
 .hero-image {
   object-fit: cover;
-  transition: transform 8s ease;
+  width: 100%;
+  height: 100%;
+}
+
+/* ✅ FIX: Image nu properly fit karo */
+.hero-background img {
+  object-fit: cover;
+  object-position: center; /* Center position */
 }
 
 .hero-section:hover .hero-image {
@@ -211,28 +218,28 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--dark-overlay);
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
   z-index: 2;
 }
 
 .hero-content {
-  position: relative;
+   position: relative;
   z-index: 3;
   text-align: center;
-  color: var(--text-light);
+  color: white;
   max-width: 900px;
   padding: 0 20px;
   width: 100%;
-  animation: fadeInUp 1s ease;
+  /* ✅ FIX: Content nu thoda uper karo */
+  transform: translateY(-5%);
 }
 
 .hero-title {
-  font-size: clamp(1.8rem, 5vw, 3.5rem);
+ font-size: clamp(1.8rem, 5vw, 3.5rem);
   font-weight: 800;
   line-height: 1.3;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-  word-break: break-word;
 }
 
 .hero-title span {
@@ -250,7 +257,7 @@ body {
 }
 
 .search-form {
-  position: relative;
+ position: relative;
   width: 100%;
 }
 
@@ -262,9 +269,8 @@ body {
   border-radius: 60px;
   background: rgba(255, 255, 255, 0.95);
   font-size: 1.1rem;
-  color: var(--text-dark);
+  color: #333;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
 }
 
 .search-input:focus {
@@ -283,7 +289,7 @@ body {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  background: var(--primary-gradient);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border: none;
   width: 50px;
   height: 50px;
@@ -1582,6 +1588,7 @@ body {
   }
 
   .hero-section {
+     height: 70vh;
     min-height: 400px;
   }
 
@@ -1772,6 +1779,41 @@ body {
   }
 
   @media screen and (max-width: 768px) {
+      .hero-section {
+    height: 80vh; /* Height thodi ghatayo */
+    min-height: 500px;
+     }
+      /* ✅ FIX 1: Image nu properly crop karo */
+  .hero-background img {
+    object-position: 30% center; /* Image nu left shift karo ta key part dikhe */
+  }
+  
+  .hero-title span {
+    font-size: 1.1rem;
+  }
+
+  .search-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .search-input {
+    padding: 1rem 1.2rem;
+    padding-right: 3.2rem;
+    font-size: 1rem;
+  }
+
+  .search-button {
+    width: 45px;
+    height: 45px;
+    right: 5px;
+  }
+
+  .search-button svg {
+    width: 20px;
+    height: 20px;
+  }
+}
     .nav-links {
       background: rgba(30, 40, 50, 0.98);
     }
@@ -1780,7 +1822,6 @@ body {
       background: linear-gradient(135deg, #90a0ff 0%, #b084cc 100%);
     }
   }
-}
 
 /* ===== ACCESSIBILITY ===== */
 @media (prefers-reduced-motion: reduce) {
@@ -2734,3 +2775,291 @@ body {
 }
 
 
+
+
+/* ===== HERO SECTION FIXES ===== */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* ✅ FIX: Image nu properly fit karo */
+.hero-background img {
+  object-fit: cover;
+  object-position: center; /* Center position */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  padding: 0 20px;
+  width: 100%;
+  /* ✅ FIX: Content nu thoda uper karo */
+  transform: translateY(-5%);
+}
+
+.hero-title {
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-title span {
+  display: block;
+  font-size: clamp(1.1rem, 3vw, 1.8rem);
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #ffd700;
+}
+
+/* Search Wrapper */
+.search-wrapper {
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.search-form {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  padding-right: 3.5rem;
+  border: none;
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 1.1rem;
+  color: #333;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.search-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ===== RESPONSIVE FIXES ===== */
+
+/* Mobile Styles (768px and below) */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    height: 80vh; /* Height thodi ghatayo */
+    min-height: 500px;
+  }
+
+  /* ✅ FIX 1: Image nu properly crop karo */
+  .hero-background img {
+    object-position: 30% center; /* Image nu left shift karo ta key part dikhe */
+  }
+
+  /* ✅ FIX 2: Search button nu thoda uper adjust karo */
+  .hero-content {
+    transform: translateY(-10%); /* Mobile te hor uper */
+    padding: 0 15px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-title span {
+    font-size: 1.1rem;
+  }
+
+  .search-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .search-input {
+    padding: 1rem 1.2rem;
+    padding-right: 3.2rem;
+    font-size: 1rem;
+  }
+
+  .search-button {
+    width: 45px;
+    height: 45px;
+    right: 5px;
+  }
+
+  .search-button svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Small Mobile Styles (480px and below) */
+@media screen and (max-width: 480px) {
+  .hero-section {
+    height: 70vh;
+    min-height: 400px;
+  }
+
+  /* ✅ FIX 3: Chhoti screen te hor uper */
+  .hero-content {
+    transform: translateY(-15%);
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-title span {
+    font-size: 1rem;
+  }
+
+  .search-input {
+    padding: 0.9rem 1rem;
+    padding-right: 3rem;
+    font-size: 0.95rem;
+  }
+
+  .search-input::placeholder {
+    font-size: 0.85rem;
+  }
+
+  .search-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .search-button svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Tablet Styles (768px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    height: 70vh;
+  }
+
+  .hero-content {
+    transform: translateY(-8%);
+  }
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1400px) {
+  .hero-content {
+    transform: translateY(-5%);
+  }
+}
+
+/* ✅ FIX 4: Ensure image always covers properly */
+.hero-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  animation: fadeInUp 1s ease;
+}
+
+
+
+
+
+/* HERO SECTION - SIRF IMAGE CENTER */
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* 🎯 Image center ch rahegi */
+}
+
+/* Mobile te image center */
+@media screen and (max-width: 768px) {
+  .hero-background img {
+    object-position: center; /* Mobile te vi center */
+  }
+}
+
+/* Chhoti mobile te */
+@media screen and (max-width: 480px) {
+  .hero-background img {
+    object-position: center; /* Chhoti te vi center */
+  }
+}

@@ -16,7 +16,7 @@ export default function HomePage() {
   };
 
   const tourismPlaces = [
-    { name: "Tara Baba Kutiya", image: "/tourism/tara-baba-kutiya.jpg", location: "Sirsa City" },
+    { name: "Tara Baba Kutiya", image: "/tourism/tara-baba-kutiya-hd.png", location: "Sirsa City" },
     { name: "Atlantic Water Park", image: "/tourism/atlantic-water-park.jpg", location: "Hisar Road" },
     { name: "Ohm Cine Garden", image: "/tourism/ohm-cine-garden.jpg", location: "Dabwali Road" },
     { name: "Surkhab Tourist Complex", image: "/tourism/surkhab-tourist-complex.jpg", location: "Rania Road" },
@@ -39,7 +39,7 @@ export default function HomePage() {
       <section className="hero-section">
         <div className="hero-background">
           <Image
-            src="/tourism/tara-baba-kutiya.jpg"
+            src="/tourism/tara-baba-kutiya-hd.png"
             alt="Tara Baba Kutiya"
             fill
             priority
