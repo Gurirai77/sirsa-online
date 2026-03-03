@@ -35,42 +35,55 @@ export default async function TourismDetail({ params }: Props) {
   };
 
   return (
-    <div className="detail-container">
-      <h1>{place.name}</h1>
+    <div className="detail-page">
 
-      <Image
-        src={place.image}
-        alt={place.name}
-        width={1200}
-        height={700}
-        quality={100}
-        priority
-        className="detail-img"
-      />
-
-      <p className="description">{place.description}</p>
-
-      <div className="action-buttons">
-        <a href={mapUrl} target="_blank" className="map-btn">
-          📍 Open in Maps
-        </a>
+      {/* HERO */}
+      <div className="detail-hero">
+        <Image
+          src={place.image}
+          alt={place.name}
+          fill
+          priority
+          className="detail-hero-img"
+        />
+        <div className="detail-hero-overlay"></div>
+        <h1 className="detail-hero-title">
+          {place.name}
+        </h1>
       </div>
 
-      <div className="info-box">
-        <p><strong>Type:</strong> {place.type}</p>
-        <p><strong>Timings:</strong> {place.timings}</p>
-        <p><strong>Rating:</strong> ⭐ {place.rating}</p>
-      </div>
+      {/* BODY */}
+      <div className="detail-body">
 
-      <div className="features-section">
-        <h3>Key Highlights</h3>
-        <div className="badge-container">
+        <p className="detail-description">
+          {place.description}
+        </p>
+
+        <div className="detail-actions">
+          <a
+            href={mapUrl}
+            target="_blank"
+            className="detail-btn detail-btn-primary"
+          >
+            📍 Open in Maps
+          </a>
+        </div>
+
+        <div className="detail-info">
+          <p><strong>Type:</strong> {place.type}</p>
+          <p><strong>Timings:</strong> {place.timings}</p>
+          <p><strong>Rating:</strong> ⭐ {place.rating}</p>
+        </div>
+
+        <h3 style={{ marginBottom: "15px" }}>Key Highlights</h3>
+        <div className="detail-badges">
           {place.features.map((feature, index) => (
-            <span key={index} className="badge">
+            <span key={index} className="detail-badge">
               ✔ {feature}
             </span>
           ))}
         </div>
+
       </div>
 
       <script

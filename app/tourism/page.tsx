@@ -10,34 +10,44 @@ export const metadata = {
 
 export default function TourismPage() {
   return (
-    <div className="restaurants-container">
-      <h1 className="page-title">Tourist Places in Sirsa</h1>
+    <div className="tourism-page-container">
+      <h1 className="tourism-page-title">
+        Tourist Places in Sirsa
+      </h1>
 
-      <div className="restaurants-grid">
+      <div className="tourism-page-grid">
         {tourismPlaces.map((place) => (
-          <div key={place.id} className="restaurant-card">
+          <div key={place.id} className="tourism-page-card">
             <Image
               src={place.image}
               alt={place.name}
               width={600}
               height={400}
               quality={100}
-              className="card-image"
+              className="tourism-page-image"
             />
 
-            <div className="card-content">
-              <h2>{place.name}</h2>
-              <p className="cuisine">{place.type}</p>
-              <p>⭐ {place.rating} Rating</p>
+            <div className="tourism-page-content">
+              <h2 className="tourism-page-name">
+                {place.name}
+              </h2>
 
-              <p className="card-desc">
+              <p className="tourism-page-type">
+                {place.type}
+              </p>
+
+              <p className="tourism-page-rating">
+                ⭐ {place.rating} Rating
+              </p>
+
+              <p className="tourism-page-desc">
                 {place.description.substring(0, 120)}...
               </p>
 
-              <div className="card-buttons">
+              <div className="tourism-page-buttons">
                 <Link
                   href={`/tourism/${place.slug}`}
-                  className="details-btn"
+                  className="tourism-page-details-btn"
                 >
                   View Details →
                 </Link>

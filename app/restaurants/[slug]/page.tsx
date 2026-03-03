@@ -42,49 +42,64 @@ export default async function RestaurantPage({ params }: Props) {
   };
 
   return (
-    <div className="detail-container">
-      <h1>{restaurant.name}</h1>
+    <div className="detail-page">
 
-      <Image
-        src={restaurant.image}
-        alt={restaurant.name}
-        width={1200}
-        height={700}
-        quality={100}
-        priority
-        className="detail-img"
-      />
-
-      <p className="description">{restaurant.description}</p>
-
-      <div className="action-buttons">
-        <a href={`tel:${restaurant.phone}`} className="call-btn">
-          📞 Call Now
-        </a>
-
-        <a href={mapUrl} target="_blank" className="map-btn">
-          📍 Open in Maps
-        </a>
+      {/* HERO SECTION */}
+      <div className="detail-hero">
+        <Image
+          src={restaurant.image}
+          alt={restaurant.name}
+          fill
+          priority
+          className="detail-hero-img"
+        />
+        <div className="detail-hero-overlay"></div>
+        <h1 className="detail-hero-title">
+          {restaurant.name}
+        </h1>
       </div>
 
-      <div className="info-box">
-        <p><strong>Cuisine:</strong> {restaurant.cuisine}</p>
-        <p><strong>Timings:</strong> {restaurant.timings}</p>
-        <p><strong>Rating:</strong> ⭐ {restaurant.rating}</p>
-      </div>
+      {/* BODY */}
+      <div className="detail-body">
 
-      <div className="features-section">
-        <h3>Key Features</h3>
-        <div className="badge-container">
+        <p className="detail-description">
+          {restaurant.description}
+        </p>
+
+        <div className="detail-actions">
+          <a
+            href={`tel:${restaurant.phone}`}
+            className="detail-btn detail-btn-success"
+          >
+            📞 Call Now
+          </a>
+
+          <a
+            href={mapUrl}
+            target="_blank"
+            className="detail-btn detail-btn-primary"
+          >
+            📍 Open in Maps
+          </a>
+        </div>
+
+        <div className="detail-info">
+          <p><strong>Cuisine:</strong> {restaurant.cuisine}</p>
+          <p><strong>Timings:</strong> {restaurant.timings}</p>
+          <p><strong>Rating:</strong> ⭐ {restaurant.rating}</p>
+        </div>
+
+        <h3 style={{ marginBottom: "15px" }}>Key Features</h3>
+        <div className="detail-badges">
           {restaurant.features.map((feature, index) => (
-            <span key={index} className="badge">
+            <span key={index} className="detail-badge">
               ✔ {feature}
             </span>
           ))}
         </div>
+
       </div>
 
-      {/* Schema Markup */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

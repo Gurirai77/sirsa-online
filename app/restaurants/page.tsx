@@ -10,39 +10,47 @@ export const metadata = {
 
 export default function RestaurantsPage() {
   return (
-    <div className="restaurants-container">
-      <h1 className="page-title">Restaurants in Sirsa</h1>
+    <div className="restaurant-page-container">
+      <h1 className="restaurant-page-title">Restaurants in Sirsa</h1>
 
-      <div className="restaurants-grid">
+      <div className="restaurant-page-grid">
         {restaurants.map((restaurant) => (
-          <div key={restaurant.id} className="restaurant-card">
+          <div key={restaurant.id} className="restaurant-page-card">
             <Image
               src={restaurant.image}
               alt={restaurant.name}
               width={600}
               height={400}
               quality={100}
-              className="card-image"
+              className="restaurant-page-image"
             />
 
-            <div className="card-content">
-              <h2>{restaurant.name}</h2>
+            <div className="restaurant-page-content">
+              <h2 className="restaurant-page-name">{restaurant.name}</h2>
 
-              <p className="cuisine">{restaurant.cuisine}</p>
-              <p className="rating">⭐ {restaurant.rating} Rating</p>
+              <p className="restaurant-page-cuisine">
+                {restaurant.cuisine}
+              </p>
 
-              <p className="card-desc">
+              <p className="restaurant-page-rating">
+                ⭐ {restaurant.rating} Rating
+              </p>
+
+              <p className="restaurant-page-desc">
                 {restaurant.description.substring(0, 120)}...
               </p>
 
-              <div className="card-buttons">
-                <a href={`tel:${restaurant.phone}`} className="call-btn">
+              <div className="restaurant-page-buttons">
+                <a
+                  href={`tel:${restaurant.phone}`}
+                  className="restaurant-page-call-btn"
+                >
                   📞 Call
                 </a>
 
                 <Link
                   href={`/restaurants/${restaurant.slug}`}
-                  className="details-btn"
+                  className="restaurant-page-details-btn"
                 >
                   View Details →
                 </Link>

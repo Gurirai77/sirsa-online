@@ -21,73 +21,86 @@ export default async function SchoolPage({ params }: Props) {
   )}`;
 
   const schemaData = {
-  "@context": "https://schema.org",
-  "@type": "School",
-  name: school.name,
-  image: `https://yourdomain.com${school.image}`,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: school.address,
-    addressLocality: "Sirsa",
-    addressRegion: "Haryana",
-    addressCountry: "India",
-  },
-  telephone: school.phone,
-  description: school.description,
-};
+    "@context": "https://schema.org",
+    "@type": "School",
+    name: school.name,
+    image: `https://yourdomain.com${school.image}`,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: school.address,
+      addressLocality: "Sirsa",
+      addressRegion: "Haryana",
+      addressCountry: "India",
+    },
+    telephone: school.phone,
+    description: school.description,
+  };
 
   return (
-    <div className="detail-container">
-      <h1>{school.name}</h1>
+    <div className="detail-page">
 
-      <Image
-        src={school.image}
-        alt={school.name}
-  width={1200}
-  height={700}
-  quality={100}
-  priority
-        className="detail-img"
-      />
-
-      <p className="description">{school.description}</p>
-
-      {/* Action Buttons */}
-      <div className="action-buttons">
-        <a href={`tel:${school.phone}`} className="call-btn">
-          📞 Call Now
-        </a>
-
-        <a href={mapUrl} target="_blank" className="map-btn">
-          📍 Open in Maps
-        </a>
+      {/* HERO */}
+      <div className="detail-hero">
+        <Image
+          src={school.image}
+          alt={school.name}
+          fill
+          priority
+          className="detail-hero-img"
+        />
+        <div className="detail-hero-overlay"></div>
+        <h1 className="detail-hero-title">
+          {school.name}
+        </h1>
       </div>
 
-      {/* Info Section */}
-      <div className="info-box">
-        <p><strong>Board:</strong> {school.board}</p>
-        <p><strong>Timings:</strong> {school.timings}</p>
-        <p><strong>Facilities:</strong> {school.facilities}</p>
-      </div>
+      {/* BODY */}
+      <div className="detail-body">
 
-      {/* Features Badges */}
-      <div className="features-section">
-        <h3>Key Features</h3>
-        <div className="badge-container">
+        <p className="detail-description">
+          {school.description}
+        </p>
+
+        <div className="detail-actions">
+          <a
+            href={`tel:${school.phone}`}
+            className="detail-btn detail-btn-success"
+          >
+            📞 Call Now
+          </a>
+
+          <a
+            href={mapUrl}
+            target="_blank"
+            className="detail-btn detail-btn-primary"
+          >
+            📍 Open in Maps
+          </a>
+        </div>
+
+        <div className="detail-info">
+          <p><strong>Board:</strong> {school.board}</p>
+          <p><strong>Timings:</strong> {school.timings}</p>
+          <p><strong>Facilities:</strong> {school.facilities}</p>
+        </div>
+
+        <h3 style={{ marginBottom: "15px" }}>Key Features</h3>
+        <div className="detail-badges">
           {school.features.map((feature, index) => (
-            <span key={index} className="badge">
+            <span key={index} className="detail-badge">
               ✔ {feature}
             </span>
           ))}
         </div>
+
       </div>
 
-<Script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(schemaData),
-  }}
-/>
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaData),
+        }}
+      />
     </div>
   );
 }
