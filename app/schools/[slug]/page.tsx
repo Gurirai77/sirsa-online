@@ -2,10 +2,53 @@ import { schools } from "@/data/schools";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Script from "next/script";
+import { Metadata } from "next";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+// ✅ DYNAMIC METADATA FOR SCHOOLS
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  
+  const school = schools.find(
+    (s) => s.slug.toLowerCase() === slug.toLowerCase()
+  );
+
+  if (!school) {
+    return {
+      title: "School Not Found | Sirsa Online",
+      description: "The requested school could not be found in Sirsa.",
+    };
+  }
+
+  return {
+    title: `${school.name} - ${school.board} School in Sirsa | Sirsa Online`,
+    description: school.description.substring(0, 160),
+    keywords: `${school.name}, ${school.board} school, Sirsa schools, Haryana, education, ${school.features?.join(', ') || 'best school'}`,
+    openGraph: {
+      title: `${school.name} - Best ${school.board} School in Sirsa`,
+      description: school.description.substring(0, 160),
+      images: school.image ? [school.image] : [],
+      locale: "en_IN",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${school.name} - Sirsa Schools`,
+      description: school.description.substring(0, 160),
+      images: school.image ? [school.image] : [],
+    },
+    alternates: {
+      canonical: `https://sirsa.online/schools/${school.slug}`,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export default async function SchoolPage({ params }: Props) {
   const { slug } = await params;

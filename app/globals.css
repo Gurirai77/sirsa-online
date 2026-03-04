@@ -3063,3 +3063,1252 @@ body {
     object-position: center; /* Chhoti te vi center */
   }
 }
+
+
+
+/* ===== SLOW ZOOM EFFECT ===== */
+.hero-background {
+  overflow: hidden; /* Zoom effect ke liye zaroori */
+}
+
+.hero-image {
+  transition: transform 8s ease-in-out; /* 8 seconds slow zoom */
+  transform: scale(1);
+}
+
+.hero-image.zoom-effect {
+  animation: slowZoom 20s infinite alternate; /* 20 seconds ek cycle */
+}
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* 10% zoom */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ✅ Hover effect - jab mouse le jao to thoda aur zoom */
+.hero-image.zoom-effect:hover {
+  animation-play-state: paused; /* Hover te animation ruk jaye */
+  transform: scale(1.15);
+  transition: transform 3s ease;
+}
+
+
+
+
+
+
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #2d3436;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.navbar-logo span {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.navbar-logo::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: rotate(25deg);
+  animation: shine 4s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -60%;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+
+
+
+/* ===== HERO TEXT ANIMATIONS ===== */
+
+/* Main title animation */
+.hero-title {
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  position: relative;
+  display: inline-block;
+}
+
+/* Gradient animation on whole text */
+.hero-title {
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #ffd700,
+    #ffffff,
+    #ffd700,
+    #ffffff
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientFlow 8s linear infinite;
+}
+
+/* Hindi text specific effect */
+.hero-title::first-line {
+  font-weight: 800;
+  letter-spacing: 1px;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* Span (Discover Sirsa) animation */
+.hero-title span {
+  display: block;
+  font-size: clamp(1.1rem, 3vw, 1.8rem);
+  font-weight: 400;
+  margin-top: 0.8rem;
+  color: #ffd700;
+  text-shadow: 
+    0 0 10px rgba(255,215,0,0.3),
+    0 0 20px rgba(255,215,0,0.2);
+  letter-spacing: 2px;
+  animation: floatText 3s ease-in-out infinite;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Underline animation for span */
+.hero-title span::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ffd700, #667eea, #ffd700);
+  animation: underlineExpand 3s ease-in-out infinite;
+}
+
+/* Blinking cursor effect on Hindi text */
+@keyframes blink {
+  0%, 100% { border-right-color: transparent; }
+  50% { border-right-color: #ffd700; }
+}
+
+.hero-title {
+  border-right: 3px solid transparent;
+  animation: gradientFlow 8s linear infinite, blink 1s step-end infinite;
+  padding-right: 10px;
+}
+
+/* Floating effect for span */
+@keyframes floatText {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-5px) scale(1.05);
+    opacity: 0.9;
+    text-shadow: 
+      0 0 20px #ffd700,
+      0 0 40px #ffd700;
+  }
+}
+
+/* Underline expand animation */
+@keyframes underlineExpand {
+  0%, 100% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Gradient flow for main text */
+@keyframes gradientFlow {
+  0% { background-position: 0% center; }
+  100% { background-position: 300% center; }
+}
+
+/* Glow pulse for Hindi text */
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(255,215,0,0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 10px rgba(255,215,0,0.6));
+  }
+}
+
+/* Optional: Particle effect behind text */
+.hero-title {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title::before {
+  content: '✦';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  font-size: 20px;
+  color: #ffd700;
+  opacity: 0;
+  animation: sparkle 4s ease-in-out infinite;
+}
+
+.hero-title::after {
+  content: '✦';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  font-size: 20px;
+  color: #ffd700;
+  opacity: 0;
+  animation: sparkle 4s ease-in-out infinite 2s;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) rotate(180deg);
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .hero-title::before,
+  .hero-title::after {
+    display: none;
+  }
+  
+  .hero-title span {
+    animation: floatText 3s ease-in-out infinite;
+  }
+}
+
+
+
+
+
+
+
+
+/* ===== QUICK CATEGORY BUTTONS ===== */
+.quick-categories {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  color: white;
+}
+
+/* Tourism Button */
+.category-btn.tourism-btn {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.category-btn.tourism-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(46, 204, 113, 0.5);
+}
+
+/* Restaurant Button */
+.category-btn.restaurant-btn {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.category-btn.restaurant-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(231, 76, 60, 0.5);
+}
+
+/* Schools Button */
+.category-btn.schools-btn {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.category-btn.schools-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.5);
+}
+
+/* Button Icons */
+.category-btn svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.category-btn:hover svg {
+  transform: scale(1.2);
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+  .quick-categories {
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+  }
+  
+  .category-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .category-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .quick-categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  
+  .category-btn {
+    width: 80%;
+    justify-content: center;
+    padding: 0.8rem;
+  }
+}
+
+
+
+
+
+
+
+/* Fix for hero title on mobile */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1rem !important;
+    word-break: break-word !important;
+  }
+  
+  .hero-title span {
+    display: block !important;
+    font-size: 1.1rem !important;
+    margin-top: 0.5rem !important;
+  }
+  
+  .hero-content {
+    padding: 0 15px !important;
+    width: 100% !important;
+  }
+  
+  .search-wrapper {
+    width: 100% !important;
+    margin: 1.5rem auto !important;
+  }
+}
+
+
+
+
+/* ===== HERO SECTION FIX ===== */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  min-height: 700px; /* Vadhia min-height */
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  padding: 0 20px;
+  width: 100%;
+  margin-top: -5%; /* Content nu thoda uper */
+}
+
+/* Title responsive */
+.hero-title {
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  word-break: break-word;
+}
+
+.hero-title span {
+  display: block;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+
+/* Search Wrapper */
+.search-wrapper {
+  max-width: 600px;
+  width: 90%;
+  margin: 1.5rem auto;
+}
+
+.search-form {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  padding-right: 3.5rem;
+  border: none;
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.98);
+  font-size: 1.1rem;
+  color: #1e293b;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Quick Category Buttons */
+.quick-categories {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Small Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .hero-section {
+    min-height: 600px;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .hero-content {
+    padding: 0 10px;
+    margin-top: 0;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-title span {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+  }
+
+  .search-wrapper {
+    width: 95%;
+    margin: 1rem auto;
+  }
+
+  .search-input {
+    padding: 0.9rem 1rem;
+    padding-right: 3rem;
+    font-size: 0.9rem;
+  }
+
+  .search-input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .search-button {
+    width: 40px;
+    height: 40px;
+    right: 5px;
+  }
+
+  /* Buttons column ch aa jange */
+  .quick-categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .category-btn {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .category-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Mobile (481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero-section {
+    min-height: 650px;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-title span {
+    font-size: 1rem;
+  }
+
+  .search-input {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  /* Buttons row vich rehange */
+  .quick-categories {
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .category-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    flex: 0 1 auto;
+  }
+}
+
+/* Tablet (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    min-height: 600px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .quick-categories {
+    gap: 1rem;
+  }
+}
+
+/* Desktop (1025px and above) */
+@media screen and (min-width: 1025px) {
+  .quick-categories {
+    gap: 1.2rem;
+  }
+  
+  .category-btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Fix for very small height devices */
+@media screen and (max-height: 700px) {
+  .hero-section {
+    min-height: 500px;
+    padding: 1rem 0;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-title span {
+    font-size: 0.9rem;
+  }
+
+  .search-wrapper {
+    margin: 0.8rem auto;
+  }
+
+  .quick-categories {
+    margin-top: 0.8rem;
+  }
+}
+
+
+
+
+
+
+
+/* Quick Category Buttons - add at bottom */
+.quick-categories {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* Tourism Button */
+.category-btn.tourism-btn { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+.category-btn.restaurant-btn { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+.category-btn.schools-btn { background: linear-gradient(135deg, #3498db, #2980b9); }
+
+.category-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 480px) {
+  .quick-categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .category-btn {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+/* ===== FINAL FIXES - Text & Small Buttons ===== */
+
+/* Hero Text Fix - Sirf City of Saints wala text */
+.hero-title {
+  font-size: clamp(1.8rem, 5vw, 3.2rem) !important;
+  line-height: 1.3 !important;
+  margin-bottom: 1rem !important;
+}
+
+.hero-title span {
+  display: block !important;
+  font-size: 1.2rem !important;
+  margin-top: 0.5rem !important;
+  color: #ffd700 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  letter-spacing: 1px !important;
+}
+
+/* Small Mobile Fix */
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem !important;
+  }
+  
+  .hero-title span {
+    font-size: 1rem !important;
+    margin-top: 0.3rem !important;
+  }
+}
+
+/* ===== SMALL BUTTONS ===== */
+.quick-categories {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem !important;  /* Gap chhota */
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem !important;  /* Gap chhota */
+  padding: 0.4rem 1rem !important;  /* ✅ CHHOTA PADDING */
+  border: none;
+  border-radius: 30px !important;  /* Thoda kam round */
+  font-size: 0.85rem !important;  /* ✅ CHHOTA FONT */
+  font-weight: 500 !important;  /* Light weight */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;  /* Light shadow */
+  color: white;
+}
+
+/* Button Icons - Chhote */
+.category-btn svg {
+  width: 14px !important;  /* ✅ CHHOTA ICON */
+  height: 14px !important;
+}
+
+/* Tourism Button */
+.category-btn.tourism-btn { 
+  background: linear-gradient(135deg, #2ecc71, #27ae60); 
+}
+
+/* Restaurant Button */
+.category-btn.restaurant-btn { 
+  background: linear-gradient(135deg, #e74c3c, #c0392b); 
+}
+
+/* Schools Button */
+.category-btn.schools-btn { 
+  background: linear-gradient(135deg, #3498db, #2980b9); 
+}
+
+.category-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive - 480px */
+@media screen and (max-width: 480px) {
+  .quick-categories {
+    flex-direction: row !important;  /* Row mein rahenge */
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .category-btn {
+    width: auto !important;  /* Auto width */
+    max-width: none;
+    padding: 0.35rem 0.9rem !important;  /* Aur chhote */
+    font-size: 0.8rem !important;
+    flex: 0 1 auto;  /* Don't stretch */
+  }
+  
+  .category-btn svg {
+    width: 12px !important;
+    height: 12px !important;
+  }
+}
+
+/* Small Mobile - 360px */
+@media screen and (max-width: 360px) {
+  .category-btn {
+    padding: 0.3rem 0.8rem !important;
+    font-size: 0.75rem !important;
+  }
+}
+
+/* Hero Section Overlay Fix */
+.hero-overlay {
+  background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%) !important;
+}
+
+/* Ensure text is visible */
+.hero-content {
+  z-index: 10 !important;
+}
+
+
+
+
+
+
+
+/* ===== FINAL FIX - Text Dikhne Ke Liye ===== */
+
+/* Force text to be visible */
+.hero-title {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: white !important;
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+  margin-bottom: 1rem !important;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8) !important;
+  z-index: 999 !important;
+  position: relative !important;
+}
+
+/* Hindi text specific */
+.hero-title::first-line {
+  color: white !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Span text (Discover Sirsa) */
+.hero-title span {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #ffd700 !important;
+  font-size: 1.3rem !important;
+  margin-top: 0.5rem !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+}
+
+/* Remove any gradient that might hide text */
+.hero-title {
+  background: none !important;  /* Remove gradient */
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: white !important;
+  background-clip: unset !important;
+  border-right: none !important;  /* Remove cursor */
+  animation: none !important;  /* Remove animations */
+}
+
+/* Ensure overlay doesn't hide text */
+.hero-overlay {
+  background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%) !important;
+  z-index: 1 !important;
+}
+
+.hero-content {
+  z-index: 999 !important;
+  position: relative !important;
+}
+
+/* Mobile Fix */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem !important;
+  }
+  
+  .hero-title span {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .hero-title span {
+    font-size: 1rem !important;
+  }
+}
+
+/* Remove ALL animations from hero title */
+.hero-title,
+.hero-title::before,
+.hero-title::after,
+.hero-title span,
+.hero-title span::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+
+
+
+
+
+
+/* ===== DISCOVER SIRSA TEXT YELLOW ===== */
+
+/* Sirf span text (Discover Sirsa) ko yellow karo */
+.hero-title span {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #ffd700 !important;  /* ✅ Yellow color */
+  font-size: 1.3rem !important;
+  margin-top: 0.5rem !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+  background: none !important;
+  -webkit-text-fill-color: #ffd700 !important;  /* ✅ Force yellow */
+}
+
+/* Mobile ke liye */
+@media screen and (max-width: 768px) {
+  .hero-title span {
+    font-size: 1.1rem !important;
+    color: #ffd700 !important;
+    -webkit-text-fill-color: #ffd700 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title span {
+    font-size: 1rem !important;
+    color: #ffd700 !important;
+    -webkit-text-fill-color: #ffd700 !important;
+  }
+}
+
+
+
+
+/* ===== FINAL FIX - SMOOTH TEXT ANIMATION ===== */
+
+/* Pehle saari clash karne wali animations hatao */
+.hero-content {
+  animation: none !important;  /* Purani fadeInUp hatao */
+}
+
+.hero-title {
+  animation: none !important;  /* Gradient animation hatao */
+  border-right: none !important;  /* Blink cursor hatao */
+  background: none !important;  /* Gradient background hatao */
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+/* Sirf ek smooth fade-in animation rakho */
+.hero-title {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: white !important;
+  font-size: clamp(1.8rem, 5vw, 3.5rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+  margin-bottom: 1rem !important;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8) !important;
+  
+  /* ✨ Ek smooth animation */
+  animation: smoothFade 1.2s ease-out forwards !important;
+}
+
+/* Hindi text ke liye */
+.hero-title::first-line {
+  color: white !important;
+}
+
+/* Span text (Discover Sirsa) yellow */
+.hero-title span {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #ffd700 !important;
+  font-size: clamp(1rem, 3vw, 1.3rem) !important;
+  margin-top: 0.5rem !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+  
+  /* Thoda late aaye */
+  animation: smoothFade 1.2s ease-out 0.3s forwards !important;
+  opacity: 0;  /* Pehle invisible */
+}
+
+/* Smooth fade animation */
+@keyframes smoothFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem !important;
+  }
+  .hero-title span {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem !important;
+  }
+  .hero-title span {
+    font-size: 1rem !important;
+  }
+}
+
+/* Koi aur animation na ho */
+.hero-title::before,
+.hero-title::after,
+.hero-title span::before,
+.hero-title span::after {
+  display: none !important;
+}
+
+
+
+/* ===== FINAL FIX - ALL ANIMATIONS BAND ===== */
+
+/* Pehle saari animations hatao */
+.hero-content,
+.hero-title,
+.hero-title::before,
+.hero-title::after,
+.hero-title span,
+.hero-title span::before,
+.hero-title span::after {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+  border-right: none !important;
+}
+
+/* Simple static text */
+.hero-title {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: white !important;
+  font-size: clamp(1.8rem, 5vw, 3.5rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+  margin-bottom: 1rem !important;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8) !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: white !important;
+  background-clip: unset !important;
+}
+
+/* Hindi text white */
+.hero-title::first-line {
+  color: white !important;
+}
+
+/* Discover Sirsa yellow */
+.hero-title span {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #ffd700 !important;
+  font-size: clamp(1rem, 3vw, 1.3rem) !important;
+  margin-top: 0.5rem !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+  background: none !important;
+  -webkit-text-fill-color: #ffd700 !important;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem !important;
+  }
+  .hero-title span {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem !important;
+  }
+  .hero-title span {
+    font-size: 1rem !important;
+  }
+}
+
+
+
+
+
+/* ===== NEW MAST ANIMATION - TYPING + GLOW ===== */
+
+/* Pehle saari purani animations hatao */
+.hero-content,
+.hero-title,
+.hero-title::before,
+.hero-title::after,
+.hero-title span,
+.hero-title span::before,
+.hero-title span::after {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+  border-right: none !important;
+}
+
+/* Naya animation */
+.hero-title {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: white !important;
+  font-size: clamp(1.8rem, 5vw, 3.5rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+  margin-bottom: 1rem !important;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8) !important;
+  
+  /* Naya glow animation */
+  animation: glowPulse 3s ease-in-out infinite !important;
+}
+
+/* Hindi text ke liye */
+.hero-title::first-line {
+  color: white !important;
+}
+
+/* Discover Sirsa - special animation */
+.hero-title span {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #ffd700 !important;
+  font-size: clamp(1rem, 3vw, 1.3rem) !important;
+  margin-top: 0.8rem !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+  
+  /* Different animation - thoda slow */
+  animation: gentleFloat 4s ease-in-out infinite !important;
+  display: inline-block;
+}
+
+/* Glow pulse animation */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 10px rgba(255,255,255,0.3),
+                 0 0 20px rgba(255,215,0,0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255,255,255,0.6),
+                 0 0 40px rgba(255,215,0,0.4),
+                 0 0 60px rgba(102,126,234,0.3);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255,255,255,0.3),
+                 0 0 20px rgba(255,215,0,0.2);
+  }
+}
+
+/* Gentle float animation for Discover Sirsa */
+@keyframes gentleFloat {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-3px) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Optional - Letter spacing effect on hover */
+.hero-title:hover span {
+  animation: letterSpace 1s ease-in-out !important;
+}
+
+@keyframes letterSpace {
+  0% { letter-spacing: normal; }
+  50% { letter-spacing: 4px; }
+  100% { letter-spacing: normal; }
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem !important;
+    animation: glowPulse 3s ease-in-out infinite !important;
+  }
+  .hero-title span {
+    font-size: 1.1rem !important;
+    animation: gentleFloat 4s ease-in-out infinite !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem !important;
+  }
+  .hero-title span {
+    font-size: 1rem !important;
+  }
+}
+
+
+
+

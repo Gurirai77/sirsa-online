@@ -101,7 +101,7 @@ export default function Footer() {
             </h3>
             
             <div className="offer-badge">
-              🎉 First 10 Listings FREE! (₹49 only after that)
+              ⚡ FREE Listing for First 10! (Limited Slots)
             </div>
 
             <div className="listing-items">

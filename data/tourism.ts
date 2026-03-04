@@ -166,5 +166,89 @@ export const tourismPlaces = [
     features: ["Meditation Hall", "Large Campus", "Spiritual Discourses", "Clean Environment"],
     description: "A massive spiritual center located in Sikanderpur, known for its vast meditation halls.",
     timings: "Open for Scheduled Events"
-  }
+  },
+  {
+    id: 15,
+    name: "Kisan Chowk",
+    slug: "kisan-chowk-sirsa",
+    address: "Huda Road, Sikander Pur, Sirsa, Haryana 125055",
+    image: "/tourism/kisan-chowk.jpg",
+    type: "Landmark & Traffic Hub",
+    rating: "4.4",
+    features: ["Strategic Intersection", "Local Landmark", "Connects Major Roads", "Public Space"],
+    description: "A prominent traffic intersection and local landmark in Sirsa, serving as a key connecting point for various parts of the city.",
+    timings: "Open 24 Hours"
+  },
+  {
+    id: 16,
+    name: "Bhagat Singh Library",
+    slug: "bhagat-singh-library-kalanwali-sirsa",
+    address: "Jagir Singh Colony, Kalanwali, Sirsa, Haryana 125201",
+    image: "/tourism/bhagat-singh-library.jpg",
+    type: "Educational & Cultural",
+    rating: "5.0",
+    features: ["Quiet Study Environment", "Book Collection", "Community Hub", "Educational Resources"],
+    description: "A well-maintained public library in Kalanwali, offering a peaceful space for students and book lovers.",
+    timings: "09:00 AM - 06:00 PM"
+  },
+  {
+    id: 17,
+    name: "Kala Teetar Wildlife Sanctuary",
+    slug: "kala-teetar-wildlife-sanctuary-sirsa",
+    address: "Mandi Dabwali, Sirsa, Haryana 125104",
+    image: "/tourism/kala-teetar-wildlife-sanctuary.jpg",
+    type: "Wildlife Sanctuary",
+    rating: "3.5",
+    features: ["Bird Watching", "Nature Trails", "Flora & Fauna", "Peaceful Environment"],
+    description: "A serene wildlife sanctuary near Dabwali, known for its diverse bird species and natural beauty.",
+    timings: "08:00 AM - 05:00 PM"
+  },
+  {
+    id: 18,
+    name: "Kalra House",
+    slug: "kalra-house-rania-sirsa",
+    address: "Main Bazaar, Rania, Sirsa, Haryana 125076",
+    image: "/tourism/kalra-house.jpg",
+    type: "Historical Landmark",
+    rating: "3.1",
+    features: ["Old Architecture", "Local Heritage", "Historical Significance", "Market Area"],
+    description: "A historical building in Rania, reflecting the traditional architectural style and local heritage of the region.",
+    timings: "10:00 AM - 07:00 PM"
+  },
+  {
+    id: 19,
+    name: "Prinda Lake",
+    slug: "prinda-lake-sirsa",
+    address: "Poharka, Sirsa, Haryana 125055",
+    image: "/tourism/prinda-lake.jpg",
+    type: "Nature & Lake",
+    rating: "4.4",
+    features: ["Scenic Views", "Picnic Spot", "Boating", "Bird Watching"],
+    description: "A beautiful and tranquil lake in Poharka, perfect for a family picnic and enjoying nature.",
+    timings: "06:00 AM - 06:00 PM"
+  },
+  {
+    id: 20,
+    name: "Peace Point Sirsa",
+    slug: "peace-point-sirsa",
+    address: "Housing Board Colony, Sirsa, Haryana 125055",
+    image: "/tourism/peace-point-sirsa.jpg",
+    type: "Public Park",
+    rating: "4.7",
+    features: ["Greenery", "Walking Tracks", "Quiet Atmosphere", "Kids Play Area"],
+    description: "A peaceful public park in the Housing Board Colony, ideal for morning walks and relaxation.",
+    timings: "05:00 AM - 09:00 PM"
+  },
+  {
+    id: 21,
+    name: "Tomb of Khwaja Pir",
+    slug: "tomb-of-khwaja-pir-sirsa",
+    address: "Sirsa City, Haryana 125055",
+    image: "/tourism/tomb-of-khwaja-pir.jpg",
+    type: "Religious & Historical",
+    rating: "4.3",
+    features: ["Ancient Tomb", "Sufi Heritage", "Architectural Beauty", "Spiritual Vibe"],
+    description: "An ancient tomb dedicated to Khwaja Pir, showcasing beautiful Sufi architecture and spiritual significance.",
+    timings: "06:00 AM - 08:00 PM"
+  },
 ];

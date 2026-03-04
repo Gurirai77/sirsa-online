@@ -1,10 +1,53 @@
 import { restaurants } from "@/data/restaurants";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import { Metadata } from "next";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+// ✅ DYNAMIC METADATA FOR RESTAURANTS
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  
+  const restaurant = restaurants.find(
+    (r) => r.slug.toLowerCase() === slug.toLowerCase()
+  );
+
+  if (!restaurant) {
+    return {
+      title: "Restaurant Not Found | Sirsa Online",
+      description: "The requested restaurant could not be found in Sirsa.",
+    };
+  }
+
+  return {
+    title: `${restaurant.name} - ${restaurant.cuisine} Restaurant in Sirsa | Sirsa Online`,
+    description: restaurant.description.substring(0, 160),
+    keywords: `${restaurant.name}, ${restaurant.cuisine} restaurant, Sirsa restaurants, Haryana, food, dining, ${restaurant.features?.join(', ') || 'best restaurant'}`,
+    openGraph: {
+      title: `${restaurant.name} - Best ${restaurant.cuisine} Restaurant in Sirsa`,
+      description: restaurant.description.substring(0, 160),
+      images: restaurant.image ? [restaurant.image] : [],
+      locale: "en_IN",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${restaurant.name} - Sirsa Restaurants`,
+      description: restaurant.description.substring(0, 160),
+      images: restaurant.image ? [restaurant.image] : [],
+    },
+    alternates: {
+      canonical: `https://sirsa.online/restaurants/${restaurant.slug}`,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export default async function RestaurantPage({ params }: Props) {
   const { slug } = await params;

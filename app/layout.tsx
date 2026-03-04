@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Sirsa Portal",
-  description: "Explore schools, restaurants, tourism and news in Sirsa",
+  title: "Sirsa Online | News, Tourism, Restaurants & Schools in Sirsa",
+  description: "Explore Sirsa city with latest news, tourist places, restaurants and schools. Complete local guide for Sirsa, Haryana.",
 };
 
 export default function RootLayout({

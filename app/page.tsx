@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
-import { Search } from "lucide-react";
+import { Search, Utensils, GraduationCap, MapPin } from "lucide-react";
 
 export default function HomePage() {
   const router = useRouter();
@@ -43,7 +43,7 @@ export default function HomePage() {
             alt="Tara Baba Kutiya"
             fill
             priority
-            className="hero-image"
+            className="hero-image zoom-effect"
           />
         </div>
 
@@ -69,9 +69,38 @@ export default function HomePage() {
               </button>
             </form>
           </div>
+
+          {/* ✅ 3 NEW BUTTONS ADDED HERE - Search Box de thalle */}
+          <div className="quick-categories">
+            <button 
+              className="category-btn tourism-btn"
+              onClick={() => router.push("/tourism")}
+            >
+              <MapPin size={18} />
+              <span>Tourism</span>
+            </button>
+            
+            <button 
+              className="category-btn restaurant-btn"
+              onClick={() => router.push("/restaurants")}
+            >
+              <Utensils size={18} />
+              <span>Restaurants</span>
+            </button>
+            
+            <button 
+              className="category-btn schools-btn"
+              onClick={() => router.push("/schools")}
+            >
+              <GraduationCap size={18} />
+              <span>Schools</span>
+            </button>
+          </div>
         </div>
       </section>
 
+      {/* Rest of your code remains exactly the same... */}
+      
       {/* TOURISM SECTION */}
       <section className="section-wrapper">
         <div className="section-header">
@@ -114,7 +143,7 @@ export default function HomePage() {
       {/* RESTAURANT SECTION */}
       <section className="section-wrapper" style={{ background: "linear-gradient(135deg, #e9ecef 0%, #f5f7fa 100%)" }}>
         <div className="section-header">
-          <h2 className="section-title">Food Paradise</h2>
+          <h2 className="section-title">Flavors of Sirsa</h2>
           <p className="section-subtitle">Best restaurants & food spots in Sirsa</p>
         </div>
 
