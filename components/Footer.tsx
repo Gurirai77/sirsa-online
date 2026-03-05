@@ -109,7 +109,7 @@ export default function Footer() {
                 <div className="listing-icon">🏪</div>
                 <div className="listing-text">
                   <div className="listing-title">Restaurants & Food</div>
-                  <div className="listing-price"><span>₹49</span> one-time</div>
+                  <div className="listing-price"><span>₹199</span> one-time</div>
                 </div>
               </div>
 
@@ -117,7 +117,7 @@ export default function Footer() {
                 <div className="listing-icon">🏫</div>
                 <div className="listing-text">
                   <div className="listing-title">Schools & Education</div>
-                  <div className="listing-price"><span>₹49</span> one-time</div>
+                  <div className="listing-price"><span>₹199</span> one-time</div>
                 </div>
               </div>
 
@@ -125,7 +125,7 @@ export default function Footer() {
                 <div className="listing-icon">🗺️</div>
                 <div className="listing-text">
                   <div className="listing-title">Tourist Places</div>
-                  <div className="listing-price"><span>₹49</span> one-time</div>
+                  <div className="listing-price"><span>₹199</span> one-time</div>
                 </div>
               </div>
             </div>

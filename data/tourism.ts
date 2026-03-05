@@ -160,7 +160,7 @@ export const tourismPlaces = [
     name: "Radha Swami Satsang Ghar",
     slug: "radha-swami-satsang-ghar-sikanderpur-sirsa",
     address: "Sikanderpur, Sirsa, Haryana 125055",
-    image: "/tourism/radha-swami-satsang-ghar-sikanderpur-sirsa.AVIF",
+    image: "/tourism/radha-swami-satsang-ghar-sikanderpur-sirsa.avif",
     type: "Religious Place",
     rating: "4.6",
     features: ["Meditation Hall", "Large Campus", "Spiritual Discourses", "Clean Environment"],

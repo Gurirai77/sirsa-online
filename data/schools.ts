@@ -186,7 +186,7 @@ export const schools = [
     "address": "Sirsa-Barnala Road, Shahpur Begu, Sirsa, Haryana",
     "board": "CBSE Affiliated",
     "phone": "01666238625",
-    "image": "/schools/shah-satnam-boys.jpg",
+    "image": "/schools/shah-satnam-boys.webp",
     "features": [
       "International Sports Stadium",
       "Residential Hostel Facility",

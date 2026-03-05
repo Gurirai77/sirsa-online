@@ -4312,3 +4312,376 @@ body {
 
 
 
+
+
+/* ===== ABOUT PAGE STYLES ===== */
+.so-about-wrapper {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  min-height: 100vh;
+}
+
+.so-about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.so-about-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.so-about-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.so-about-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.so-about-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: rgba(255,255,255,0.9);
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  line-height: 1.6;
+}
+
+/* Content Section */
+.so-about-content-section {
+  padding: 80px 0;
+}
+
+.so-about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+/* Text Block */
+.so-about-text-block {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.so-about-text-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 50px rgba(102,126,234,0.1);
+}
+
+.so-about-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.so-about-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+.so-about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.so-about-description strong {
+  color: #667eea;
+  font-weight: 700;
+}
+
+/* Contact Card */
+.so-about-contact-card {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102,126,234,0.1);
+}
+
+.so-about-contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 50px rgba(102,126,234,0.15);
+  border-color: rgba(102,126,234,0.3);
+}
+
+.so-about-card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Contact Items */
+.so-about-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.so-about-contact-item:hover {
+  transform: translateX(10px);
+  border-bottom-color: #667eea;
+}
+
+.so-about-icon {
+  font-size: 1.3rem;
+  min-width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea10, #764ba210);
+  border-radius: 50%;
+}
+
+.so-about-contact-item a {
+  color: #475569;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.so-about-contact-item a:hover {
+  color: #667eea;
+}
+
+.so-about-contact-item span {
+  color: #475569;
+  font-size: 1rem;
+}
+
+/* WhatsApp Button */
+.so-about-btn {
+  width: 100%;
+  padding: 16px 24px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.so-whatsapp-btn {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.so-whatsapp-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.so-whatsapp-btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.so-whatsapp-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+}
+
+.btn-icon {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.so-whatsapp-btn:hover .btn-icon {
+  transform: scale(1.2);
+}
+
+.so-whatsapp-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-top: 15px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+  .so-about-grid {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+  }
+  
+  .so-about-hero {
+    padding: 100px 0;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+  .so-about-hero {
+    padding: 120px 0;
+  }
+  
+  .so-about-text-block {
+    padding: 50px;
+  }
+  
+  .so-about-contact-card {
+    padding: 50px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .so-about-hero {
+    padding: 60px 0;
+  }
+  
+  .so-about-content-section {
+    padding: 60px 0;
+  }
+  
+  .so-about-text-block,
+  .so-about-contact-card {
+    padding: 30px;
+  }
+  
+  .so-about-heading {
+    font-size: 1.8rem;
+  }
+  
+  .so-about-description {
+    font-size: 1rem;
+  }
+  
+  .so-about-card-title {
+    font-size: 1.5rem;
+  }
+  
+  .so-about-contact-item {
+    padding: 10px 0;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  .so-about-hero {
+    padding: 40px 0;
+  }
+  
+  .so-about-title {
+    font-size: 2rem;
+  }
+  
+  .so-about-subtitle {
+    font-size: 1rem;
+  }
+  
+  .so-about-text-block,
+  .so-about-contact-card {
+    padding: 20px;
+  }
+  
+  .so-about-heading {
+    font-size: 1.5rem;
+  }
+  
+  .so-about-btn {
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .so-about-wrapper {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+  }
+  
+  .so-about-text-block,
+  .so-about-contact-card {
+    background: #1e293b;
+  }
+  
+  .so-about-heading {
+    color: #f1f5f9;
+  }
+  
+  .so-about-description,
+  .so-about-contact-item a,
+  .so-about-contact-item span {
+    color: #cbd5e1;
+  }
+  
+  .so-about-contact-item {
+    border-bottom-color: #334155;
+  }
+}
+
+
+
+
