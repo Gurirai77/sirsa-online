@@ -94,8 +94,8 @@ export default function Footer() {
 
         {/* Right Section - Contact & Links */}
         <div className="footer-contact">
-          {/* List Your Business Card */}
-          <div className="contact-card">
+          {/* Business Listing Form - Commented Out for Now */}
+          {/* <div className="contact-card">
             <h3 className="card-title">
               <span>📢</span> List Your Business
             </h3>
@@ -130,7 +130,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Contact Form - EmailJS */}
             <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
               <input type="hidden" name="to_email" value="thegurirai77@gmail.com" />
               
@@ -196,7 +195,7 @@ export default function Footer() {
                 </div>
               )}
             </form>
-          </div>
+          </div> */}
 
           {/* Quick Links Card */}
           <div className="contact-card">

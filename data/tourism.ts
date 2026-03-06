@@ -8,7 +8,7 @@ export const tourismPlaces = [
     type: "Entertainment & Shopping",
     rating: "4.5",
     features: ["Cinema", "Shopping", "Food Court", "Garden"],
-    description: "A premier entertainment hub in Sirsa featuring a modern cinema, shopping outlets, and a beautiful garden area.",
+    description: "Discover OHM Cine Garden & Shopping Complex, Sirsa's premier entertainment destination that seamlessly blends cinematic experiences with modern retail therapy and diverse culinary delights. This state-of-the-art multiplex features advanced sound systems and high-definition screens across multiple auditoriums, offering everything from comfortable standard seating to luxurious recliners for an unparalleled movie-watching experience. Beyond the silver screen, the complex houses a carefully curated selection of national and local retail brands, making it a one-stop destination for fashion, accessories, and electronics. The expansive food court is a culinary paradise, serving everything from quick-service international favorites to authentic Indian delicacies, including the unique train-themed 'The Royal Junction' restaurant. A beautifully landscaped garden area provides a serene escape for relaxation and casual strolls. Strategically located on Hissar Road, this modern architectural marvel has redefined Sirsa's entertainment landscape, regularly hosting special events, celebrity appearances, and promotional activities that make every visit unique. Whether you're a movie enthusiast, shopaholic, or food lover, OHM Cine Garden promises a complete lifestyle experience under one roof.",
     timings: "10:00 AM - 11:00 PM"
   },
   {
@@ -20,7 +20,7 @@ export const tourismPlaces = [
     type: "Water Park",
     rating: "4.2",
     features: ["Water Slides", "Wave Pool", "Kids Area", "Food Stalls"],
-    description: "The most popular water park in Sirsa, offering a variety of slides and pools for family fun.",
+    description: "Escape the scorching Haryana heat at Atlantic Water World, Sirsa's most beloved aquatic adventure park that promises a day filled with splashing fun, adrenaline-pumping rides, and family-friendly entertainment. Spread across a sprawling campus on Barnala Road, this premier water destination features an impressive collection of thrilling water slides including crowd-favorites like the 'Aqua Funnel' and 'Tornado' that deliver exhilarating drops and twisting descents. The massive wave pool simulates ocean-like waves, providing a realistic swimming experience for all ages, while a dedicated kids' area with smaller slides and interactive splash pads ensures even the youngest visitors have a safe and joyful time. Safety is paramount, with trained lifeguards stationed at every attraction and strict adherence to international standards. Well-maintained changing rooms, showers, and locker facilities add to visitor convenience, while numerous food stalls and a multi-cuisine food court offer refreshing beverages and delicious snacks to refuel after hours of aquatic fun. During festive seasons like Holi, the park organizes special themed parties and events, adding extra excitement to your visit. With its perfect blend of thrilling rides, relaxing pools, and family-friendly amenities, Atlantic Water World remains the ultimate destination for beat-the-heat entertainment in Sirsa.",
     timings: "10:00 AM - 06:00 PM"
   },
   {
@@ -32,7 +32,7 @@ export const tourismPlaces = [
     type: "Religious Place",
     rating: "4.8",
     features: ["71-foot Shiva Statue", "Cave Entrance", "Beautiful Gardens", "Evening Aarti"],
-    description: "A magnificent spiritual landmark featuring a massive Shiva statue and serene gardens.",
+    description: "Experience divine tranquility at Tara Baba Kutiya, Sirsa's most magnificent spiritual landmark dominated by a awe-inspiring 71-foot statue of Lord Shiva in meditative pose. This sacred complex, situated on Rania Road, offers a profound spiritual journey enhanced by its unique cave-like entrance that symbolically transports visitors from the material world to a realm of peace and contemplation. According to local legends, the revered saint Tara Baba, after whom the Kutiya is named, performed miracles here including ending a regional drought through his powerful prayers. The meticulously maintained gardens surrounding the central shrine create a lush, serene environment perfect for meditation and leisurely walks, while the evening aarti ceremony fills the atmosphere with rhythmic chanting, flickering oil lamps, and collective devotion that touches the soul. During Maha Shivaratri, the entire complex transforms into a spectacular celebration with special decorations, extended prayers, and thousands of devotees gathering to honor Lord Shiva. The 71-foot statue itself is a marvel of modern craftsmanship, its intricate details inspiring awe and reverence in all who behold it. Whether you seek spiritual solace, architectural wonder, or simply a peaceful retreat from city life, Tara Baba Kutiya offers a transformative experience that lingers long after you've left its sacred grounds.",
     timings: "05:00 AM - 10:00 PM"
   },
   {
@@ -44,7 +44,7 @@ export const tourismPlaces = [
     type: "Religious Place",
     rating: "4.7",
     features: ["Historical Sikh Shrine", "Peaceful Sarovar", "Langar Hall", "Spiritual Vibe"],
-    description: "A deeply revered Sikh shrine where Guru Nanak Dev Ji stayed and meditated.",
+    description: "Step into history at Gurudwara Chilla Sahib, a profoundly sacred Sikh shrine marking the very spot where Guru Nanak Dev Ji, the founder of Sikhism, meditated for 40 days during his 1506 Udasi (travels). Located on Rania Road with government-allocated land confirming its historical authenticity, this revered pilgrimage site draws devotees from across the globe seeking blessings in its spiritually charged atmosphere. The main prayer hall resonates with continuous Gurbani recitation, creating an uplifting environment that encourages deep introspection and devotion. A peaceful Sarovar (sacred pool) invites visitors for holy dips believed to cleanse the soul, its tranquil waters surrounded by lush greenery offering moments of quiet contemplation. The Langar Hall embodies Sikhism's core principle of selfless service (Seva), serving free nutritious meals to all visitors regardless of caste, creed, or religion – a powerful demonstration of equality and community. During Guru Nanak Jayanti, the Gurudwara transforms into a spectacular display of lights and devotion, hosting special processions, kirtan (devotional singing), and grand prayer services. Open 24 hours daily, this living testament to Guru Nanak Dev Ji's enduring legacy offers every visitor a profound experience of peace, history, and the warm embrace of Sikh hospitality.",
     timings: "Open 24 Hours"
   },
   {
@@ -56,7 +56,7 @@ export const tourismPlaces = [
     type: "Religious & Social Center",
     rating: "4.5",
     features: ["Spiritual Center", "Large Assembly Hall", "Social Welfare", "Organic Farming"],
-    description: "A world-renowned spiritual and social welfare organization known for its humanitarian initiatives.",
+    description: "Founded on April 29, 1948, by Saint Shah Mastana Ji Maharaj, Dera Sacha Sauda has evolved into one of India's most prominent socio-spiritual organizations, globally recognized for its unprecedented scale of humanitarian work and spiritual teachings. The sprawling Sirsa headquarters on Shah Satnam Singh Ji Marg houses not only magnificent assembly halls for spiritual discourses (Satsangs) but also hospitals, educational institutions, and extensive organic farming initiatives that exemplify self-sufficiency. The organization's philosophy seamlessly weaves spiritual awakening with practical social service, manifesting in their renowned '147 Humanitarian Works' that have set world records in blood donation, tree plantation, and disaster relief operations. The spiritual center's large assembly hall regularly hosts thousands of devotees who gather to receive guidance on moral living, meditation, and universal brotherhood that transcends religious boundaries. Visitors witness an extraordinary community of dedicated volunteers (sevadars) from diverse backgrounds working together on initiatives ranging from drug addiction campaigns to cleanliness drives. The organic farming projects demonstrate commitment to sustainable living and healthy food production. While primarily a spiritual organization, Dera Sacha Sauda's remarkable contributions to social welfare have made it a unique institution where faith seamlessly translates into tangible community development, drawing both devotees and curious observers to its Sirsa headquarters.",
     timings: "Open All Days"
   },
   {
@@ -68,7 +68,7 @@ export const tourismPlaces = [
     type: "Public Park",
     rating: "4.2",
     features: ["Lush Greenery", "Jogging Track", "Kids Play Area", "Fountain"],
-    description: "A central green lung of Sirsa city, offering a peaceful environment for families and joggers.",
+    description: "Bhadra Park serves as Sirsa's beloved green lung, a refreshing oasis of tranquility nestled near the Railway Station in bustling Bhadra Bazar that offers residents and visitors alike a perfect escape from urban chaos. This meticulously maintained public park features extensive lush lawns, mature trees providing ample shade, and vibrant flowerbeds that create a visually stunning and ecologically beneficial environment while supporting local birdlife. Fitness enthusiasts flock to the well-laid jogging and walking tracks during early morning and evening hours, making it a vibrant community hub for health-conscious individuals. Families with children particularly appreciate the dedicated kids' play area equipped with swings, slides, and recreational structures that provide safe, engaging entertainment for young ones. Decorative fountains add to the park's charm, their gentle water sounds creating a soothing ambiance, while evening illuminations transform them into magical focal points. Strategically placed benches throughout the grounds offer comfortable spots for reading, conversation, or simply observing the vibrant community life. More than just a recreational space, Bhadra Park hosts morning yoga groups, evening social gatherings, weekend family picnics, and occasional community events that strengthen Sirsa's social fabric. Its combination of natural beauty, recreational facilities, and welcoming atmosphere makes this centrally located park an indispensable part of daily life for Sirsa residents.",
     timings: "05:00 AM - 09:00 PM"
   },
   {
@@ -80,7 +80,7 @@ export const tourismPlaces = [
     type: "Religious Place",
     rating: "4.6",
     features: ["Lord Hanuman Temple", "Spiritual Vibe", "Local Devotion", "Festive Celebrations"],
-    description: "A popular local temple dedicated to Lord Hanuman, known for its spiritual atmosphere.",
+    description: "Salasar Dham Sirsa stands as a cherished spiritual sanctuary on Hisar Road, where the powerful presence of Lord Hanuman draws devotees seeking strength, protection, and fulfillment of heartfelt wishes. While sharing its name with Rajasthan's famous Salasar Balaji, this temple possesses its own unique identity centered around a distinctive idol of Lord Hanuman that inspires deep local devotion and regular pilgrimages from surrounding areas. The temple truly comes alive on Tuesdays, considered highly auspicious for Hanuman worship, when hundreds of devotees gather for special prayers, lamp lighting, and collective chanting of the Hanuman Chalisa, creating an atmosphere charged with spiritual energy. During Hanuman Jayanti, the entire complex transforms with elaborate decorations, extended puja ceremonies, and community feasts (langar) that strengthen social bonds and celebrate shared faith. The temple architecture, while modest compared to grand historical structures, features colorful depictions of scenes from the Ramayana and creates an intimate, welcoming environment for prayer and reflection. Smaller shrines dedicated to other Hindu deities within the complex offer a comprehensive spiritual experience. Beyond religious rituals, Salasar Dham serves as a vital community gathering point where residents share joys and sorrows, seek guidance, and reinforce cultural identity through active participation in temple affairs and festivals, making it much more than a place of worship – it's the spiritual heart of its community.",
     timings: "06:00 AM - 09:00 PM"
   },
   {
@@ -92,7 +92,7 @@ export const tourismPlaces = [
     type: "Sports Complex",
     rating: "4.3",
     features: ["Outdoor Tracks", "Sports Training", "Public Events", "Youth Hub"],
-    description: "A major sports hub in Sirsa where local athletes train and public events are held.",
+    description: "Named after the legendary freedom fighter Bhagat Singh, this premier sports complex on Barnala Road stands as Sirsa's proud symbol of athletic excellence and civic spirit, serving as the primary nurturing ground for the region's sporting talent. The stadium's well-maintained outdoor tracks witness early morning and evening activity from dedicated athletes, students, and fitness enthusiasts who utilize them for serious training and daily exercise routines that promote community health. Beyond athletics, the expansive grounds accommodate football and hockey practice sessions, friendly matches, and organized tournaments that engage local schools, colleges, and sports clubs in healthy competition. The stadium regularly transforms into a vibrant venue for sports meets, annual school sports days, and even cultural programs and political rallies that draw significant crowds and contribute to Sirsa's social calendar. As a youth hub, it provides constructive outlets for young people, channeling their energy into sports that develop discipline, teamwork, and leadership qualities under the guidance of experienced coaches. The facility's continuous upgrades to meet modern sporting standards reflect the community's commitment to providing the best possible resources for athlete development. Whether you're a serious competitor, weekend jogger, or spectator attending an event, Shaheed Bhagat Singh Stadium embodies the spirit of its namesake through its dedication to excellence, community service, and nurturing future champions.",
     timings: "05:00 AM - 08:00 PM"
   },
   {
@@ -104,7 +104,7 @@ export const tourismPlaces = [
     type: "Religious Place",
     rating: "4.6",
     features: ["Ancient Temple", "Nath Sect Heritage", "Historical Architecture", "Spiritual Vibe"],
-    description: "One of the oldest religious sites in Sirsa, built by saint Sarsai Nath.",
+    description: "Dera Baba Sarsai Nath holds the distinction of being one of Sirsa's oldest and most historically significant religious sites, believed by locals to be the very place from which the city derives its name – after the revered saint Sarsai Nath of the Nath sect who established this sacred Dera. This foundational spiritual center offers compelling evidence of Shaivism and the Pashupati sect flourishing in Sirsa during the 8th and 9th centuries, providing a tangible link to the region's ancient religious heritage. The complex's most architecturally distinctive feature is its unique octagonal building, a rare design that carries profound symbolic significance and offers insights into construction techniques and aesthetic preferences of bygone eras. A sacred lake adds to the contemplative atmosphere, serving both ritualistic bathing purposes and providing a tranquil backdrop for meditation and prayer that harmonizes historical architecture with natural elements. As a living center of Nath tradition, known for Hatha Yoga and ascetic practices, the Dera maintains centuries-old traditions through regular ceremonies and festivals that attract devotees seeking connection with this ancient spiritual lineage. The peaceful campus, away from city bustle, offers visitors an opportunity to experience profound historical depth while engaging with living spiritual practices that have continued uninterrupted for over a millennium, making it an indispensable destination for understanding Sirsa's cultural soul.",
     timings: "06:00 AM - 08:30 PM"
   },
   {
@@ -116,7 +116,7 @@ export const tourismPlaces = [
     type: "Tourist Complex",
     rating: "4.1",
     features: ["Motel", "Restaurant", "Bar", "Green Landscape"],
-    description: "A government-run tourist complex offering accommodation, dining, and lush green lawns.",
+    description: "Surkhab Tourist Complex welcomes travelers to Sirsa with reliable government-operated hospitality that combines comfortable accommodation, diverse dining options, and expansive green spaces in one convenient Barnala Road location. The well-maintained motel provides clean, functional rooms equipped with essential amenities, offering practical lodging for business travelers, families, and tourists seeking affordable comfort without unnecessary frills. The multi-cuisine restaurant delights guests with authentic Haryanvi specialties alongside popular Indian and continental dishes, allowing visitors to savor regional flavors without leaving the complex, while the well-stocked bar provides relaxed evening refreshment. What truly distinguishes Surkhab are its sprawling lush lawns and meticulously maintained gardens that create a refreshing environment for leisurely walks, outdoor relaxation, and even hosting small events or functions. These verdant spaces offer a welcome contrast to the often-dry surrounding landscape, providing guests with genuine green retreat. The complex's government backing ensures consistent service standards and reliability appreciated by those unfamiliar with the area. Whether you're seeking overnight accommodation during a road trip, a pleasant dining venue, or simply a peaceful spot to unwind amidst nature, Surkhab Tourist Complex delivers dependable hospitality in a setting that feels more welcoming than typical highway stopovers.",
     timings: "09:00 AM - 10:00 PM"
   },
   {
@@ -128,7 +128,7 @@ export const tourismPlaces = [
     type: "Historical Site",
     rating: "4.0",
     features: ["Archaeological Significance", "Ancient Ruins", "Panoramic City View", "Historical Heritage"],
-    description: "An ancient archaeological site that reveals the long history of Sirsa.",
+    description: "Ther Mound stands as Sirsa's most compelling archaeological treasure, a raised earthen time capsule that silently preserves centuries of human civilization beneath its surface, with excavations revealing artifacts potentially connecting the city to the ancient Indus Valley Civilization. This historically priceless site offers archaeologists and visitors alike tangible evidence of successive settlements, with each excavated layer yielding pottery, coins, tools, and structural remains that collectively narrate Sirsa's evolution from a probable significant town along ancient trade routes or the legendary Saraswati River to its present form. Walking across the mound, history enthusiasts can spot scattered pottery shards and occasional exposed brickwork that hint at the sophisticated urban life that once flourished here. The elevated position provides panoramic views of modern Sirsa stretching below, creating a powerful visual connection between past and present that encourages deep contemplation about the continuity of human habitation in this region over millennia. While lacking the grand standing monuments of more famous historical sites, Ther Mound's significance lies in the authentic archaeological narrative it presents – a story waiting to be fully uncovered through ongoing research and conservation efforts. For those willing to look beneath the surface, this unassuming mound offers the most profound connection possible to Sirsa's ancient roots and the countless generations who called this land home long before recorded history.",
     timings: "Open All Day"
   },
   {
@@ -140,7 +140,7 @@ export const tourismPlaces = [
     type: "Religious Place",
     rating: "4.5",
     features: ["Spiritual Atmosphere", "Local Devotion", "Beautiful Shrines", "Festive Celebrations"],
-    description: "A popular local temple dedicated to Lord Hanuman in Ram Nagria.",
+    description: "Hanuman Temple in Ram Nagria represents the beating heart of local spirituality in this residential neighborhood, where generations of devotees have gathered to seek blessings from Lord Hanuman, the beloved symbol of strength, devotion, and unwavering loyalty. While modest in architectural scale compared to grand pilgrimage destinations, this temple's true magnificence lies in the palpable faith it inspires – particularly on Tuesdays, when the compound overflows with worshippers offering prayers, lighting lamps, and collectively chanting the Hanuman Chalisa in an atmosphere charged with extraordinary spiritual energy. The main idol of Lord Hanuman, adorned daily with fresh garlands and vibrant ornaments, reflects the deep personal connection devotees feel with their chosen deity, many believing that wishes made here with sincere heart are inevitably fulfilled. During Hanuman Jayanti, the temple transforms with elaborate decorations, special pujas, and community celebrations that draw the entire neighborhood together in shared devotion and festivity. The temple complex includes smaller shrines dedicated to other Hindu deities, providing a comprehensive spiritual experience. More than just a religious structure, this temple functions as Ram Nagria's social and cultural anchor – a place where life's important moments are sanctified, community bonds are strengthened, and ancient traditions are lovingly preserved and passed to new generations, embodying the timeless spiritual heritage of Sanatan Dharma in everyday practice.",
     timings: "06:00 AM - 09:00 PM"
   },
   {
@@ -152,7 +152,7 @@ export const tourismPlaces = [
     type: "Religious Place",
     rating: "4.4",
     features: ["Spiritual Trust", "Community Service", "Peaceful Campus", "Religious Events"],
-    description: "A spiritual trust dedicated to the teachings of Baba Ladi Shah Ji.",
+    description: "Baba Ladi Shah Ji Trust in Titu Khera stands as a living monument to the teachings and legacy of its revered founder, carrying forward centuries-old spiritual traditions through an active community dedicated to devotion, humility, and selfless service. The peaceful campus, designed for spiritual practices, features a main Satsang hall where regular spiritual discourses and devotional singing sessions provide guidance and inspiration for followers seeking deeper connection with the divine. True to its founder's ethos, the Trust actively engages in humanitarian work that benefits the local community – organizing free food distribution (Langar), supporting educational initiatives, providing assistance to the needy, and promoting health awareness through volunteer-driven programs that embody the spirit of giving without expectation. The beautifully maintained grounds offer tranquil spaces for meditation and reflection, providing visitors a genuine retreat from material concerns. Throughout the year, the Trust celebrates religious events with traditional rituals, devotional music, and community meals that strengthen bonds among devotees while preserving ancient customs. Special occasions commemorating Baba Ladi Shah Ji's life and teachings draw larger gatherings marked by intense devotion and celebration. Whether participating in organized service activities, attending spiritual discourses, or simply sitting quietly in the peaceful environment, visitors experience the living tradition of a spiritual community that continues its founder's mission of combining personal enlightenment with tangible contributions to society's welfare.",
     timings: "08:00 AM - 07:00 PM"
   },
   {
@@ -164,23 +164,11 @@ export const tourismPlaces = [
     type: "Religious Place",
     rating: "4.6",
     features: ["Meditation Hall", "Large Campus", "Spiritual Discourses", "Clean Environment"],
-    description: "A massive spiritual center located in Sikanderpur, known for its vast meditation halls.",
+    description: "Radha Swami Satsang Ghar in Sikanderpur stands as a magnificent regional center for the Radha Soami Satsang Beas (RSSB) tradition, offering a serene and meticulously organized environment where thousands gather to practice Surat Shabd Yoga (Sound Current Yoga) under spiritual guidance. The sprawling campus, located just east of Sirsa city, features vast meditation halls designed with purposeful simplicity to accommodate massive congregations while maintaining an atmosphere deeply conducive to inner reflection and spiritual connection. The term 'Satsang Ghar' (house of truth) perfectly describes its function – a place where spiritual discourses (Satsangs) led by the living Master or designated speakers illuminate the path of meditation on divine sound and light, answering seekers' questions and guiding collective practice. The entire complex exemplifies exceptional cleanliness and order, maintained by dedicated volunteers (Sewadars) whose selfless service embodies core Radha Soami values of discipline and purity. The deliberate location away from city bustle creates the tranquil retreat necessary for serious spiritual pursuit, while the center's operations reflect the movement's commitment to simple, ethical living, vegetarianism, and abstention from intoxicants. Whether attending scheduled Satsangs or participating in major spiritual gatherings, visitors experience a profound sense of peace and community that transcends everyday consciousness. For followers and curious visitors alike, this Sikanderpur center offers an authentic introduction to one of India's most organized and influential contemporary spiritual movements.",
     timings: "Open for Scheduled Events"
   },
   {
     id: 15,
-    name: "Kisan Chowk",
-    slug: "kisan-chowk-sirsa",
-    address: "Huda Road, Sikander Pur, Sirsa, Haryana 125055",
-    image: "/tourism/kisan-chowk.jpg",
-    type: "Landmark & Traffic Hub",
-    rating: "4.4",
-    features: ["Strategic Intersection", "Local Landmark", "Connects Major Roads", "Public Space"],
-    description: "A prominent traffic intersection and local landmark in Sirsa, serving as a key connecting point for various parts of the city.",
-    timings: "Open 24 Hours"
-  },
-  {
-    id: 16,
     name: "Bhagat Singh Library",
     slug: "bhagat-singh-library-kalanwali-sirsa",
     address: "Jagir Singh Colony, Kalanwali, Sirsa, Haryana 125201",
@@ -188,47 +176,11 @@ export const tourismPlaces = [
     type: "Educational & Cultural",
     rating: "5.0",
     features: ["Quiet Study Environment", "Book Collection", "Community Hub", "Educational Resources"],
-    description: "A well-maintained public library in Kalanwali, offering a peaceful space for students and book lovers.",
+    description: "Bhagat Singh Library in Kalanwali's Jagir Singh Colony stands as a beacon of knowledge and intellectual growth, providing the community with an invaluable resource for education, research, and personal development in an era where access to information remains crucial for empowerment. Named after the iconic freedom fighter whose life exemplified the power of ideas, this well-maintained public library houses an extensive and diverse collection spanning literature, science, history, philosophy, current affairs, and competitive exam preparation materials, complemented by periodicals, newspapers, and emerging digital resources. The quiet, thoughtfully designed reading rooms offer comfortable seating, excellent lighting, and air-conditioned spaces that create ideal conditions for focused study – particularly precious for students preparing for competitive examinations without access to similar environments at home. Knowledgeable staff assist patrons in navigating resources and utilizing facilities effectively, enhancing the library's educational value. Beyond its core function, the library serves as a vibrant community hub organizing book readings, literary discussions, workshops, and awareness campaigns that transform it into an interactive space for intellectual exchange and community engagement. By providing free or affordable access to knowledge regardless of socioeconomic background, Bhagat Singh Library fulfills the democratic promise of education and empowers generations of learners to pursue their dreams. For Kalanwali's students, researchers, and lifelong learners, this institution represents not just a building with books, but a gateway to unlimited possibilities through the transformative power of reading and study.",
     timings: "09:00 AM - 06:00 PM"
   },
   {
-    id: 17,
-    name: "Kala Teetar Wildlife Sanctuary",
-    slug: "kala-teetar-wildlife-sanctuary-sirsa",
-    address: "Mandi Dabwali, Sirsa, Haryana 125104",
-    image: "/tourism/kala-teetar-wildlife-sanctuary.jpg",
-    type: "Wildlife Sanctuary",
-    rating: "3.5",
-    features: ["Bird Watching", "Nature Trails", "Flora & Fauna", "Peaceful Environment"],
-    description: "A serene wildlife sanctuary near Dabwali, known for its diverse bird species and natural beauty.",
-    timings: "08:00 AM - 05:00 PM"
-  },
-  {
-    id: 18,
-    name: "Kalra House",
-    slug: "kalra-house-rania-sirsa",
-    address: "Main Bazaar, Rania, Sirsa, Haryana 125076",
-    image: "/tourism/kalra-house.jpg",
-    type: "Historical Landmark",
-    rating: "3.1",
-    features: ["Old Architecture", "Local Heritage", "Historical Significance", "Market Area"],
-    description: "A historical building in Rania, reflecting the traditional architectural style and local heritage of the region.",
-    timings: "10:00 AM - 07:00 PM"
-  },
-  {
-    id: 19,
-    name: "Prinda Lake",
-    slug: "prinda-lake-sirsa",
-    address: "Poharka, Sirsa, Haryana 125055",
-    image: "/tourism/prinda-lake.jpg",
-    type: "Nature & Lake",
-    rating: "4.4",
-    features: ["Scenic Views", "Picnic Spot", "Boating", "Bird Watching"],
-    description: "A beautiful and tranquil lake in Poharka, perfect for a family picnic and enjoying nature.",
-    timings: "06:00 AM - 06:00 PM"
-  },
-  {
-    id: 20,
+    id: 16,
     name: "Peace Point Sirsa",
     slug: "peace-point-sirsa",
     address: "Housing Board Colony, Sirsa, Haryana 125055",
@@ -236,11 +188,11 @@ export const tourismPlaces = [
     type: "Public Park",
     rating: "4.7",
     features: ["Greenery", "Walking Tracks", "Quiet Atmosphere", "Kids Play Area"],
-    description: "A peaceful public park in the Housing Board Colony, ideal for morning walks and relaxation.",
+    description: "True to its evocative name, Peace Point Sirsa offers Housing Board Colony residents and visitors a genuine sanctuary of calm – a thoughtfully designed public park where lush greenery, tranquil walking paths, and serene atmosphere combine to create the perfect escape from urban stress. Unlike more bustling recreational areas, this park prioritizes quiet contemplation and connection with nature, attracting early morning walkers who appreciate the well-laid tracks for daily exercise in peaceful surroundings. Mature trees provide cooling shade, while well-manicured lawns and carefully planted shrubs create visual appeal and contribute to a noticeably cooler microclimate and improved air quality that makes the park pleasant even during warmer months. A dedicated kids' play area with swings and slides ensures families can enjoy quality time together, with parents relaxing on shaded benches while children play safely nearby. The park's design thoughtfully incorporates ample seating throughout, allowing visitors to read, converse quietly, or simply observe the natural surroundings in comfort. More than just open space, Peace Point serves as a vital community asset fostering well-being, encouraging physical activity, and providing opportunities for neighborly interaction in an environment that genuinely lives up to its name. The careful maintenance and preservation of its peaceful ambiance demonstrate the community's commitment to maintaining this green oasis for everyone's benefit, making it a cherished destination for those seeking genuine relaxation without traveling far from home.",
     timings: "05:00 AM - 09:00 PM"
   },
   {
-    id: 21,
+    id: 17,
     name: "Tomb of Khwaja Pir",
     slug: "tomb-of-khwaja-pir-sirsa",
     address: "Sirsa City, Haryana 125055",
@@ -248,7 +200,7 @@ export const tourismPlaces = [
     type: "Religious & Historical",
     rating: "4.3",
     features: ["Ancient Tomb", "Sufi Heritage", "Architectural Beauty", "Spiritual Vibe"],
-    description: "An ancient tomb dedicated to Khwaja Pir, showcasing beautiful Sufi architecture and spiritual significance.",
+    description: "The Tomb of Khwaja Pir stands as Sirsa's most poignant monument to its rich Sufi heritage, an exquisitely preserved architectural gem dedicated to Khwaja Abdul Shankar – believed to have arrived in India alongside the revered Khwaja Muinuddin Chishti of Ajmer in the 13th century, establishing a spiritual lineage that continues inspiring devotion today. This sacred mausoleum exemplifies classic Sufi architectural traditions, featuring elegant domes, graceful arches, and intricate decorative elements that reflect Islamic artistic sensibilities while creating a contemplative space perfectly suited for prayer and remembrance. Devotees from diverse faith backgrounds regularly visit to pay homage, seeking the saint's blessings and experiencing the profound peace that permeates this holy precinct. The annual Urs celebration transforms the site into a vibrant gathering where Qawwali (devotional music) fills the air, communal meals are shared, and spiritual discourses honor the saint's life and teachings – a powerful demonstration of living Sufi traditions that continue bridging communities. As a symbol of India's syncretic cultural heritage, this tomb reminds visitors of the Sufi saints' historic role in fostering communal harmony and understanding through their message of divine love transcending religious boundaries. Carefully preserved through generations, the Tomb of Khwaja Pir offers historians architectural insights, provides devotees spiritual solace, and invites all visitors to appreciate the multicultural threads woven into Sirsa's historical fabric – a peaceful sanctuary where the past remains vibrantly present and the saint's blessings continue flowing to all who seek them.",
     timings: "06:00 AM - 08:00 PM"
-  },
+  }
 ];
