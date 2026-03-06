@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Sirsa Online | News, Tourism, Restaurants & Schools in Sirsa",
-  description: "Explore Sirsa city with latest news, tourist places, restaurants and schools. Complete local guide for Sirsa, Haryana.",
+  title: "Sirsa Online | Tourism, Best Restaurants & Top Schools in Sirsa",
+  description: "Looking for the best in Sirsa? From must-visit tourist spots and top schools to local restaurants and latest news updates – get everything at Sirsa Online. Explore now!",
 };
 
 export default function RootLayout({
