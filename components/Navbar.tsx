@@ -34,10 +34,10 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/", icon: Home },
-    { name: "News", href: "/news", icon: Newspaper },
     { name: "Tourism", href: "/tourism", icon: Map },
     { name: "Restaurant", href: "/restaurants", icon: Utensils },
     { name: "Schools", href: "/schools", icon: GraduationCap },
+    { name: "News", href: "/news", icon: Newspaper },
   ];
 
   return (
