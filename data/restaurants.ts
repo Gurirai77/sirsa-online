@@ -3,39 +3,39 @@ export const restaurants = [
     id: 1,
     name: "Amritsar Haveli Sirsa",
     slug: "amritsar-haveli-sirsa",
-    address: "Delhi Pull, Industrial Area, Hisar Road, Sirsa, Haryana 125055",
+    address: "G3JG+G66, Delhi Pull Industrial Area, Hisar Road, Sirsa, Haryana 125055",
     phone: "08222004101",
     cuisine: "Punjabi, North Indian, Continental",
-    image: "/restaurants/amritsar-haveli-image.jpg", // Exterior Front View
+    image: "/restaurants/amritsar-haveli-image.jpg",
     rating: "4.4",
     features: ["Traditional Punjabi Theme", "Spacious Parking", "Cultural Decor", "Fine Dining & Banquet"],
-    description: "Amritsar Haveli is a major landmark in Sirsa with its grand traditional architecture, making it easy for travelers to spot on the highway.",
+    description: "Experience the true essence of Punjab at Amritsar Haveli Sirsa, a magnificent landmark on the Hisar Road highway. Known for its grand traditional architecture and vibrant cultural decor, this restaurant is much more than a dining spot—it is a tribute to Punjabi heritage. Whether you are a traveler stopping by or a local resident, you must indulge in their world-famous Amritsari Kulchas and rich Dal Makhani. With its spacious parking and elegant banquet facilities, it remains the premier choice for family gatherings and authentic North Indian fine dining in Sirsa.",
     timings: "08:00 AM - 11:30 PM"
   },
   {
     id: 2,
     name: "Kashish Restaurant",
     slug: "kashish-restaurant-sirsa",
-    address: "Shah Satnam Singh Ji Marg, Begu Rd, near Sach Petroleum, Sirsa, Haryana 125055",
+    address: "Shah Satnam Singh Ji Marg, Begu Road, near Sach Petroleum, Sirsa, Haryana 125055",
     phone: "09729107700",
     cuisine: "North Indian, South Indian, Chinese, Pure Veg",
-    image: "/restaurants/kashish-image.jpg", // Exterior Front View
+    image: "/restaurants/kashish-image.jpg",
     rating: "4.2",
     features: ["Family Friendly", "Budget Friendly", "Extensive Menu", "Prompt Service"],
-    description: "Located near Sach Petroleum, the restaurant has a distinctive circular building design that is well-known to locals.",
+    description: "A local institution with over 24 years of culinary excellence, Kashish Restaurant is famous for its unique circular building design and warm, family-friendly atmosphere. Located conveniently near Sach Petroleum on Begu Road, it has long been the go-to destination for those seeking high-quality pure vegetarian food at affordable prices. From their signature North Indian Thalis to crispy South Indian snacks and flavorful Chinese dishes, the menu is crafted to satisfy every palate. If you are looking for prompt service and a reliable dining experience that feels like home, Kashish is a must-visit in Sirsa.",
     timings: "09:00 AM - 11:00 PM"
   },
   {
     id: 3,
     name: "Salsa Bistro By Priyank",
     slug: "salsa-bistro-sirsa",
-    address: "Industrial Area Sec.20, Delhi Pull, Hisar Road, HUDA Colony, Sirsa, Haryana 125055",
+    address: "Delhi Pull, Hisar Road, Industrial Area Sector 20, HUDA Colony, Sirsa, Haryana 125055",
     phone: "08950065330",
     cuisine: "Multi-cuisine, North Indian, Chinese, Fast Food",
-    image: "/restaurants/salsa-bistro-image.jpg", // Exterior Front View
+    image: "/restaurants/salsa-bistro-image.jpg",
     rating: "4.5",
     features: ["Modern Decor", "Live Music", "Trendy Atmosphere", "Great for Parties"],
-    description: "Salsa Bistro features a modern, stylish facade with clear 'SB' branding, located conveniently near Delhi Pull.",
+    description: "Salsa Bistro By Priyank brings a refreshing, modern touch to the Sirsa food scene. Situated near Delhi Pull, this trendy bistro stands out with its stylish 'SB' branding and vibrant, upbeat atmosphere. It is the perfect venue for the younger generation and families alike, offering a diverse multi-cuisine menu that ranges from tandoori platters to gourmet burgers and refreshing mocktails. With live music sessions and a chic interior design, it has quickly become the top-rated spot for birthday parties and social gatherings. Enjoy a sophisticated dining experience where great food meets festive vibes.",
     timings: "11:00 AM - 11:00 PM"
   },
   {
@@ -45,23 +45,88 @@ export const restaurants = [
     address: "Barnala Road, Opposite Civil Hospital, Sirsa, Haryana 125055",
     phone: "01666220011",
     cuisine: "North Indian, Mughlai, Chinese",
-    image: "/restaurants/yellow-chilli-image.jpg", // Exterior Front View
+    image: "/restaurants/yellow-chilli-image.jpg",
     rating: "4.1",
     features: ["Fine Dining", "Celebrity Chef Brand", "Elegant Ambience", "Premium Quality"],
-    description: "The Yellow Chilli is easily identified by its premium signage and elegant entrance located on Barnala Road.",
+    description: "Elevate your dining experience at The Yellow Chilli Sirsa, the flagship restaurant by celebrity Master Chef Sanjeev Kapoor. Located on Barnala Road, this fine-dining establishment is synonymous with gourmet North Indian and Mughlai cuisine. The menu features iconic recipes like 'Shaam Savera' and 'Lalla Mussa Dal,' prepared with premium ingredients and a modern twist. The elegant ambiance and sophisticated service make it the ideal location for corporate lunches, romantic dinners, and special celebrations. For those who appreciate the finer things in life, The Yellow Chilli offers an unparalleled culinary journey in the heart of Sirsa.",
     timings: "11:00 AM - 11:00 PM"
   },
   {
     id: 5,
     name: "Luxmi Sweets & Restaurant",
     slug: "luxmi-sweets-sirsa",
-    address: "Old Civil Hospital Road, Bhadra Bazar, Sirsa, Haryana 125055",
+    address: "Old Civil Hospital Road, near LIC Building, Bhadra Bazar, Sirsa, Haryana 125055",
     phone: "01666220551",
     cuisine: "North Indian, Traditional Sweets, Fast Food",
-    image: "/restaurants/luxmi-sweets-sirsa.jpg", // Exterior Front View
+    image: "/restaurants/luxmi-sweets-sirsa.jpg",
     rating: "4.0",
     features: ["Famous Sweets", "Local Landmark", "Traditional Taste", "Busy Market Location"],
-    description: "A prominent landmark in Bhadra Bazar, Luxmi Sweets has a large, brightly lit storefront that is a staple of the local market area.",
+    description: "A legendary name in Sirsa’s culinary history, Luxmi Sweets & Restaurant has been a cornerstone of Bhadra Bazar for generations. Known for its brightly lit storefront and bustling energy, it is the ultimate destination for authentic Indian sweets and traditional North Indian meals. Their Malai Kofta and fresh Paneer Pakodas are local favorites that have stood the test of time. Beyond its famous mithai shop, the restaurant features a spacious banquet hall upstairs, making it a preferred choice for community events and traditional family breakfasts. Visit Luxmi Sweets to experience the true taste of Sirsa’s rich food heritage.",
     timings: "08:00 AM - 10:30 PM"
+  },
+  {
+    id: 6,
+    name: "Chennai Maratha Sirsa",
+    slug: "chennai-maratha-sirsa",
+    address: "Gita Bhawan Street, Opposite Bhushan Opticals, Rori Bazar, Sirsa, Haryana 125055",
+    phone: "08360933540",
+    cuisine: "South Indian, Maharashtrian, Fusion",
+    image: "/restaurants/chennai-maratha-image.jpg",
+    rating: "4.6",
+    features: ["Authentic South Indian", "Fusion Cuisine", "Central Location", "Vibrant Decor"],
+    description: "Chennai Maratha Sirsa is a unique culinary destination that brings a delightful fusion of authentic South Indian and Maharashtrian flavors to the heart of Rori Bazar. Known for its vibrant atmosphere and prompt service, it is the perfect spot for those craving crispy Dosas, fluffy Idlis, and flavorful Vada Pavs. The restaurant's commitment to traditional recipes and high-quality ingredients has made it a local favorite for a quick, delicious, and authentic meal. Whether you're looking for a hearty breakfast or a light evening snack, Chennai Maratha offers a refreshing taste of the South in Sirsa.",
+    timings: "11:30 AM - 11:00 PM"
+  },
+  {
+    id: 7,
+    name: "Multani Rasoi",
+    slug: "multani-rasoi-sirsa",
+    address: "Near Shree Bhagat Singh Stadium, Barnala Road, ADC Colony, Sirsa, Haryana 125055",
+    phone: "09992811211",
+    cuisine: "North Indian, Multani Specialities, Traditional",
+    image: "/restaurants/multani-rasoi-image.jpg",
+    rating: "4.4",
+    features: ["Traditional Multani Taste", "Family Dining", "Signature Parathas", "Cozy Ambience"],
+    description: "Multani Rasoi is a hidden gem in Sirsa that celebrates the rich culinary traditions of the Multani community. Located near the Bhagat Singh Stadium on Barnala Road, this restaurant is famous for its authentic North Indian dishes and signature Multani-style preparations. Their diverse menu features a variety of stuffed parathas and traditional meals that offer a comforting, home-cooked feel. With its cozy and welcoming environment, Multani Rasoi is an excellent choice for families looking to enjoy a wholesome and flavorful dining experience that stays true to its roots.",
+    timings: "10:00 AM - 10:00 PM"
+  },
+  {
+    id: 8,
+    name: "Wok N Grill",
+    slug: "wok-n-grill-sirsa",
+    address: "Opposite Jandi Wali Gali, Hisar Road, Khairpur, Sirsa, Haryana 125055",
+    phone: "01666244151",
+    cuisine: "North Indian, Chinese, BBQ, Continental",
+    image: "/restaurants/wok-n-grill-image.jpg",
+    rating: "4.1",
+    features: ["Casual Dining", "Multi-cuisine", "Cozy Atmosphere", "Great for Groups"],
+    description: "Wok N Grill is a popular casual dining outlet in Sirsa that offers a wide-ranging menu featuring Asian, Western, and North Indian cuisines. Situated on Hisar Road, it provides a cozy and inviting atmosphere that is perfect for social gatherings and family outings. From sizzling BBQ platters to flavorful Chinese stir-fries and classic North Indian curries, the restaurant caters to a variety of tastes. Its consistent quality and friendly service have established Wok N Grill as a reliable destination for those seeking a diverse and satisfying culinary experience in a relaxed setting.",
+    timings: "11:00 AM - 11:00 PM"
+  },
+  {
+    id: 9,
+    name: "The Savera Hotel & Restaurant",
+    slug: "the-savera-hotel-sirsa",
+    address: "Hisar Road, Near New Bus Stand, Begu Road, Sirsa, Haryana 125055",
+    phone: "08813000444",
+    cuisine: "North Indian, Mughlai, Continental",
+    image: "/restaurants/savera-hotel-image.jpg",
+    rating: "4.0",
+    features: ["Fine Dining", "Bar & Lounge", "Spacious Banquet", "Prime Location"],
+    description: "The Savera Hotel & Restaurant is a well-established landmark in Sirsa, offering a sophisticated dining experience combined with premium hospitality. Located conveniently on Hisar Road near the New Bus Stand, it features an elegant restaurant known for its rich North Indian and Mughlai delicacies. The establishment also boasts a cozy bar and lounge, making it a versatile venue for both formal dinners and relaxed social evenings. With its spacious banquet facilities and professional service, The Savera remains a top choice for hosting large events and enjoying a high-quality meal in a refined environment.",
+    timings: "09:00 AM - 11:00 PM"
+  },
+  {
+    id: 10,
+    name: "The Burj Restaurant",
+    slug: "the-burj-restaurant-sirsa",
+    address: "HUDA Road, Maharana Pratap Chowk, Near Kisan Chowk, Sirsa, Haryana 125055",
+    phone: "07027474742",
+    cuisine: "North Indian, Chinese, Fast Food",
+    image: "/restaurants/the-burj-image.jpg",
+    rating: "4.3",
+    features: ["Modern Ambience", "Family Friendly", "Party Venue", "Extensive Menu"],
+    description: "The Burj Restaurant is a modern and stylish dining destination in Sirsa that has quickly gained popularity for its excellent food and vibrant atmosphere. Located near Maharana Pratap Chowk on HUDA Road, it offers a diverse menu that includes North Indian favorites, Chinese specialties, and a variety of fast food options. The restaurant's contemporary decor and spacious seating make it an ideal venue for family celebrations, birthday parties, and casual get-togethers. With its focus on quality service and a welcoming environment, The Burj provides a delightful dining experience for guests of all ages.",
+    timings: "11:00 AM - 10:00 PM"
   }
 ];
