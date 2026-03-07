@@ -70,7 +70,7 @@ export default function HomePage() {
             </form>
           </div>
 
-          {/* ✅ 3 NEW BUTTONS ADDED HERE - Search Box de thalle */}
+          {/* ✅ 3 NEW BUTTONS ADDED HERE - */}
           <div className="quick-categories">
             <button 
               className="category-btn tourism-btn"
